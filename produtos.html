@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        
+        
+ var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+  ga('send', 'event', 'galeria', 'next_prev', 'Titulo da página');
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+<div id="cabecalho">Cabel</div>
+<div id="banner"></div>
+<div id="menu">
+        
+</div>
+<div id="bod">
+    <section class="container gallery-container">
+
+            <!--Slide-->
+            <div class="mySlides fade"> <!-- 01 -->
+                <div class="numbertext">01 / 05</div>
+                <img class="imgslide" src="Doce.jpg" alt="Arara Azul"/>
+                <div class="text">Arara Azul</div>
+            </div>
+
+            <div class="mySlides fade"> <!-- 02 -->
+                <div class="numbertext">02 / 05</div>
+                <img class="imgslide" src="Doce.jpg" alt="Arara Canindé"/>
+                <div class="text">Arara Canindé</div>
+            </div>
+
+            <div class="mySlides fade"> <!-- 03 -->
+                <div class="numbertext">03 / 05</div>
+                <img class="imgslide" src="Doce.jpg" alt="Papagaio Verdadeiro"/>
+                <div class="text">Amazona é um género de papagaios da ordem Psittaciformes, característico da América, existindo desde o sul do México até o Caribe e a América do Sul. São conhecidos, popularmente, como papagaios, louros, ajerus, ajurus, jerus e jurus</div>
+            </div>
+
+            <div class="mySlides fade"> <!-- 04 -->
+                <div class="numbertext">04 / 05</div>
+                <img class="imgslide" src="https://i1.wp.com/www.windycityparrot.com/wordpress/wp-content/uploads/31094569_s.jpg?fit=450%2C300&ssl=1" alt="Jandaia"/>
+                <div class="text">Jandaia</div>
+            </div>
+
+            <div class="mySlides fade"> <!-- 05 -->
+                <div class="numbertext">05 / 05</div>
+                <img class="imgslide" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Tiriba-de-testa-vermelha.jpg/1200px-Tiriba-de-testa-vermelha.jpg" alt="Jandaia"/>
+                <div class="text">Tiriba de testa vermelha</div>
+            </div>
+            <!--Final Slides-->
+
+            <!--Navigation-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+        <!--End of galery-->
+    
+
+
+<div id="rodape"></div>
+
+
+</body>
+</html>
