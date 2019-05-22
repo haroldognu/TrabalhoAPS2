@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>APS2</title>
+
+    
+    <script> 
+function formatar(src, mask)
+{
+  var i = src.value.length;
+  var saida = mask.substring(0,1);
+  var texto = mask.substring(i)
+if (texto.substring(0,1) != saida)
+  {
+                src.value += texto.substring(0,1);
+  }
+}
+
+</script>
+</head>
+<body>
+    
+    <div id="bod2">
+                <div id="logo">
+                    <br>
+                         <h1> Bem Maior <br> Doações</h1>
+
+
+                </div>
+
+                <div id="corpo">
+                        <form method="POST" action="cadastro.php">
+                        Login:
+                        <br>
+                        <br>
+                        <label>Nome:
+                            
+                        <textarea name="Nome:" id="NomeTex" cols="10" rows="01"></textarea>
+                    </label>
+
+                    <br>
+                    <label>Senha:
+                        
+                    <textarea name="Senha:" id="SenhaTex" cols="10" rows="01"></textarea>
+                </label>
+                <br>
+                <label>Data Nascimento:
+                  
+                <input type="date" onkeypress="formatar">
+            </label>
+
+            <br>
+            <label>Pais:
+                
+                    <select>
+                            <option>ES</option>
+                            <option>ES</option>
+                            <option>ES</option>
+        
+                            <option>ES</option>
+        
+        
+                    </select>
+        </label>
+
+        <br>
+        <label>Estado:
+            
+                <select>
+                        <option>ES</option>
+                        <option>ES</option>
+                        <option>ES</option>
+    
+                        <option>ES</option>
+    
+    
+                </select>
+    </label>
+
+    <br>
+    <label>Cidade:
+        
+            <select>
+                    <option>ES</option>
+                    <option>ES</option>
+                    <option>ES</option>
+
+                    <option>ES</option>
+
+
+            </select>
+</label>
+
+<br>
+<label>RG :
+    
+<textarea name="RG:" id="RGText" cols="10" rows="01"></textarea>
+</label>
+<br>
+<label>CNPJ/CPF:
+    
+<textarea name="CNPJ/CPF:" id="CNPJ/CPFtext" cols="10" rows="01"></textarea>
+</label>
+        <br>
+        <br>
+            <button id="Cadastro">Cadastro</button>
+            <button id="Limpar">Cancelar</button>
+    
+        
+            
+                
+                    
+</from>
+                </div>
+                    <div id="rodape2">
+
+                    </div>
+
+
+    </div>
+    
+</body>
+</html>
